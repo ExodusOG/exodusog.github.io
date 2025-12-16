@@ -1,0 +1,73 @@
+Exodus Data License (Really Simple License — RSL)
+
+Version 1.0
+
+Copyright © Exodus Data
+
+--------------------------------------------------
+PERMISSION
+--------------------------------------------------
+
+All content published at https://exodus-data.com/ is made publicly
+available and may be:
+
+• Indexed
+• Scraped
+• Cached
+• Stored
+• Analyzed
+• Quoted
+• Transformed
+• Used in datasets
+• Used for search, research, and machine learning purposes,
+  including AI training and inference
+
+This permission applies to both automated and manual access,
+without prior approval, provided the requirements below are met.
+
+--------------------------------------------------
+REQUIREMENTS
+--------------------------------------------------
+
+1. Attribution
+   Reasonable attribution to "Exodus Data" must be preserved where
+   attribution is customary or technically feasible.
+
+2. License Retention
+   This license, or a reference to it, must be retained with any
+   redistributed or derivative materials when possible.
+
+3. No Misrepresentation
+   Content may not be presented in a way that falsely implies
+   endorsement by Exodus Data.
+
+--------------------------------------------------
+RESTRICTIONS
+--------------------------------------------------
+
+There are no restrictions on commercial use.
+
+There are no restrictions on derivative works.
+
+There are no restrictions on automated processing.
+
+--------------------------------------------------
+DISCLAIMER
+--------------------------------------------------
+
+All content is provided "as is", without warranty of any kind,
+express or implied. Exodus Data disclaims all liability arising
+from use of the content.
+
+--------------------------------------------------
+AUTHORITATIVE LICENSE LOCATION
+--------------------------------------------------
+
+The authoritative and human-readable version of this license is
+available at:
+
+https://exodus-data.com/license/
+
+--------------------------------------------------
+END OF LICENSE
+--------------------------------------------------
