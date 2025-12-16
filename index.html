@@ -75,7 +75,8 @@
       margin-top: 0.5rem;
     }
 
-    nav a {
+    nav a,
+    nav .current {
       margin-right: 1rem;
       color: #4ea1ff;
       text-decoration: none;
@@ -84,6 +85,12 @@
 
     nav a:last-child {
       margin-right: 0;
+    }
+
+    nav .current {
+      cursor: default;
+      opacity: 0.9;
+      text-decoration: none;
     }
 
     nav a:hover {
@@ -121,7 +128,7 @@
       </div>
 
       <nav aria-label="Primary navigation">
-        <a href="index.html">Home</a>
+        <span class="current" aria-current="page">Home</span>
         <a href="contact/">Contact</a>
         <a href="license/">License</a>
       </nav>
