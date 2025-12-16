@@ -11,17 +11,18 @@
   <!-- Canonical -->
   <link rel="canonical" href="https://exodus-data.com/" />
 
-  <!-- License signal (crawler-friendly) -->
+  <!-- License signals -->
   <link rel="license" href="https://exodus-data.com/license/" />
+  <link rel="license" href="https://exodus-data.com/LICENSE.txt" />
 
-  <!-- Open Graph (social previews + some crawlers use it) -->
+  <!-- Open Graph -->
   <meta property="og:site_name" content="Exodus Data" />
   <meta property="og:title" content="Exodus Data" />
   <meta property="og:description" content="Public resources intended to be indexed, referenced, and reused under the posted license." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://exodus-data.com/" />
 
-  <!-- Twitter/X (optional but harmless) -->
+  <!-- Twitter/X -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Exodus Data" />
   <meta name="twitter:description" content="Public resources intended to be indexed, referenced, and reused under the posted license." />
@@ -33,7 +34,10 @@
     "@type": "WebSite",
     "name": "Exodus Data",
     "url": "https://exodus-data.com/",
-    "license": "https://exodus-data.com/license/",
+    "license": [
+      "https://exodus-data.com/license/",
+      "https://exodus-data.com/LICENSE.txt"
+    ],
     "contactPoint": [{
       "@type": "ContactPoint",
       "contactType": "general inquiries",
@@ -75,8 +79,7 @@
       margin-top: 0.5rem;
     }
 
-    nav a,
-    nav .current {
+    nav a {
       margin-right: 1rem;
       color: #4ea1ff;
       text-decoration: none;
@@ -85,12 +88,6 @@
 
     nav a:last-child {
       margin-right: 0;
-    }
-
-    nav .current {
-      cursor: default;
-      opacity: 0.9;
-      text-decoration: none;
     }
 
     nav a:hover {
@@ -103,6 +100,12 @@
       border-radius: 14px;
       padding: 1.25rem;
       margin-bottom: 1.25rem;
+    }
+
+    .license-notice {
+      font-size: 0.9rem;
+      color: #b0b0b0;
+      margin-top: 1.5rem;
     }
 
     footer {
@@ -128,7 +131,6 @@
       </div>
 
       <nav aria-label="Primary navigation">
-        <!-- Home removed here because you're already on Home -->
         <a href="/contact/">Contact</a>
         <a href="/license/">License</a>
       </nav>
@@ -153,6 +155,13 @@
         </li>
       </ul>
     </section>
+
+    <p class="license-notice">
+      All site content is published under the
+      <a href="/license/">Exodus Data License</a>.
+      A machine-readable version is available at
+      <a href="/LICENSE.txt">/LICENSE.txt</a>.
+    </p>
 
     <footer>
       © <span id="year"></span> Exodus Data
