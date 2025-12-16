@@ -1,73 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OK</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exodus Data</title>
 
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://www.exodus-data.com/">
+  <meta name="description" content="Exodus Data — public data, licensing information, and contact details." />
+  <meta name="robots" content="index, follow" />
 
-  <!-- RSL meta signal -->
-  <meta name="license" content="Really Simple License (RSL) — Conditional Use">
-
-  <!-- RSL machine-readable declaration -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    "name": "Exodus Data Public Content",
-    "url": "https://www.exodus-data.com/",
-    "license": "https://www.exodus-data.com/license",
-    "conditionsOfAccess": "This content is publicly accessible and may be crawled, indexed, stored, and transformed.",
-    "usageInfo": "Use of this content that contributes to, is incorporated into, or materially supports a commercial product, service, model, or system requires a separate license. No commercial rights are granted by default.",
-    "creator": {
-      "@type": "Organization",
-      "name": "Exodus Data"
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #0f0f0f;
+      color: #eaeaea;
+      line-height: 1.6;
     }
-  }
-  </script>
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin: 0;
+    }
+
+    .tagline {
+      color: #bdbdbd;
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      margin-right: 1rem;
+      color: #4ea1ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:last-child {
+      margin-right: 0;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #9a9a9a;
+    }
+
+    a {
+      color: #4ea1ff;
+    }
+  </style>
 </head>
 
 <body>
   <main>
-    <h1>OK</h1>
-    <p>OK</p>
+    <header>
+      <div>
+        <h1>Exodus Data</h1>
+        <div class="tagline">
+          Public resources, licensing information, and contact details.
+        </div>
+      </div>
 
-    <hr>
+      <nav aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="license/">License</a>
+      </nav>
+    </header>
 
-    <section id="license" aria-label="License summary">
-      <h2>Really Simple License (RSL) — Conditional Use</h2>
-
+    <section>
+      <h2>About</h2>
       <p>
-        This content is publicly accessible and may be crawled, indexed,
-        stored, and transformed.
-      </p>
-
-      <p>
-        Use of this content that contributes to, is incorporated into,
-        or materially supports a commercial product, service, model,
-        or system requires a separate license.
-      </p>
-
-      <p>
-        No commercial rights are granted by default.
-      </p>
-
-      <p>
-        <strong>Licensing terms:</strong><br>
-        <a href="https://www.exodus-data.com/license">
-          https://www.exodus-data.com/license
-        </a>
-      </p>
-
-      <p>
-        <strong>Licensing inquiries:</strong><br>
-        <a href="https://www.exodus-data.com/contact">
-          https://www.exodus-data.com/contact
-        </a>
+        Exodus Data provides publicly accessible materials intended to be
+        indexed, referenced, and reused in accordance with the posted license.
       </p>
     </section>
+
+    <section>
+      <h2>Getting started</h2>
+      <ul>
+        <li>
+          Visit the <a href="contact.html">Contact</a> page for inquiries or requests.
+        </li>
+        <li>
+          Review the <a href="license/">License</a> to understand permitted use.
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Exodus Data
+    </footer>
   </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
