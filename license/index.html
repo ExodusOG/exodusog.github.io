@@ -1,73 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>License — Exodus Data</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>License | Exodus Data</title>
 
-  <meta name="license" content="Really Simple License (RSL) — Conditional Use">
+  <meta name="description" content="License terms for content published by Exodus Data." />
+  <meta name="robots" content="index, follow" />
 
-  <link rel="canonical" href="https://www.exodus-data.com/license">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://exodus-data.com/license/" />
 
+  <!-- License signal (self-reference is fine) -->
+  <link rel="license" href="https://exodus-data.com/license/" />
+
+  <!-- Open Graph (social previews + some crawlers use it) -->
+  <meta property="og:site_name" content="Exodus Data" />
+  <meta property="og:title" content="License | Exodus Data" />
+  <meta property="og:description" content="License terms for content published by Exodus Data." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://exodus-data.com/license/" />
+
+  <!-- Twitter/X (optional but harmless) -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="License | Exodus Data" />
+  <meta name="twitter:description" content="License terms for content published by Exodus Data." />
+
+  <!-- Structured data (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    "name": "Really Simple License (RSL) — Conditional Use",
-    "url": "https://www.exodus-data.com/license",
-    "license": "https://www.exodus-data.com/license",
-    "conditionsOfAccess": "Public access. Crawling and indexing permitted.",
-    "usageInfo": "Commercial deployment of systems incorporating this content requires a separate license.",
-    "creator": {
-      "@type": "Organization",
-      "name": "Exodus Data"
+    "@type": "WebPage",
+    "name": "License",
+    "url": "https://exodus-data.com/license/",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Exodus Data",
+      "url": "https://exodus-data.com/",
+      "license": "https://exodus-data.com/license/"
     }
   }
   </script>
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #0f0f0f;
+      color: #eaeaea;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    nav {
+      margin-bottom: 2rem;
+    }
+
+    nav a,
+    nav .current {
+      margin-right: 1rem;
+      color: #4ea1ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:last-child {
+      margin-right: 0;
+    }
+
+    nav .current {
+      cursor: default;
+      opacity: 0.9;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 1.25rem;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: #9a9a9a;
+    }
+
+    a {
+      color: #4ea1ff;
+    }
+  </style>
 </head>
 
 <body>
   <main>
-    <h1>Really Simple License (RSL) — Conditional Use</h1>
+    <nav aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../contact/">Contact</a>
+      <span class="current" aria-current="page">License</span>
+    </nav>
 
-    <p>
-      This license applies to content published at
-      <strong>https://www.exodus-data.com/</strong>
-      and its subpages.
-    </p>
+    <h1>License</h1>
 
-    <h2>Permitted Access</h2>
-    <p>
-      This content is publicly accessible and may be crawled, indexed,
-      stored, and transformed.
-    </p>
+    <section>
+      <p>
+        Place your license terms here.
+      </p>
 
-    <h2>Conditional Use</h2>
-    <p>
-      Use of this content that contributes to, is incorporated into,
-      or materially supports a commercial product, service, model,
-      or system requires a separate license.
-    </p>
+      <p>
+        If you already have license text, paste it into this section and keep the rest of the page unchanged.
+      </p>
+    </section>
 
-    <h2>Rights Reserved</h2>
-    <p>
-      No commercial rights are granted by default.
-    </p>
-
-    <h2>Licensing Inquiries</h2>
-    <p>
-      For licensing inquiries, visit:
-      <br>
-      <a href="https://www.exodus-data.com/contact">
-        https://www.exodus-data.com/contact
-      </a>
-    </p>
-
-    <h2>Effective Date</h2>
-    <p>
-      This license is effective as of the date it is published
-      and timestamped in the public repository history.
-    </p>
+    <footer>
+      © <span id="year"></span> Exodus Data
+    </footer>
   </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
