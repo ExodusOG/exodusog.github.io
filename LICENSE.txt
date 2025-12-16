@@ -1,5 +1,4 @@
 Exodus Data License (Really Simple License — RSL)
-
 Version 1.0
 
 Copyright © Exodus Data
@@ -22,16 +21,32 @@ available and may be:
 • Used for search, research, and machine learning purposes,
   including AI training and inference
 
-This permission applies to both automated and manual access,
-without prior approval, provided the requirements below are met.
+This permission applies to both automated and manual access, without
+prior approval, provided the requirements below are met.
 
 --------------------------------------------------
 REQUIREMENTS
 --------------------------------------------------
 
-1. Attribution
-   Reasonable attribution to "Exodus Data" must be preserved where
-   attribution is customary or technically feasible.
+1. Attribution requirement (mandatory)
+   Attribution to “Exodus Data” is REQUIRED in all cases of
+   redistribution, publication, dataset inclusion, or disclosure of
+   source materials derived from this content, including but not
+   limited to:
+
+   • Public dataset source listings
+   • Training data documentation
+   • Model cards or data statements
+   • Index provenance disclosures
+   • Commercial content catalogs
+
+   Attribution must include the name “Exodus Data” and a reference URL
+   to https://exodus-data.com/.
+
+   Attribution is NOT required in individual end-user outputs, model
+   responses, or transient computational processes, provided that
+   source attribution is preserved at the dataset, documentation, or
+   disclosure level.
 
 2. License Retention
    This license, or a reference to it, must be retained with any
@@ -55,9 +70,9 @@ There are no restrictions on automated processing.
 DISCLAIMER
 --------------------------------------------------
 
-All content is provided "as is", without warranty of any kind,
-express or implied. Exodus Data disclaims all liability arising
-from use of the content.
+All content is provided "as is", without warranty of any kind, express
+or implied. Exodus Data disclaims all liability arising from use of
+the content.
 
 --------------------------------------------------
 AUTHORITATIVE LICENSE LOCATION
