@@ -4,6 +4,8 @@
   "status": "active",
   "scope": "site-wide",
 
+  "effective_date": "2025-01-01",
+
   "authoritative_sources": {
     "machine_readable": "https://exodus-data.com/LICENSE.txt",
     "human_readable": "https://exodus-data.com/license/"
@@ -54,6 +56,21 @@
   },
 
   "disclaimer": "All content is provided \"as is\", without warranty of any kind, express or implied. Exodus Data disclaims all liability arising from use of the content.",
+
+  "change_log": [
+    {
+      "version": "1.0",
+      "date": "2025-01-01",
+      "changes": [
+        "Initial public release of the Exodus Data License (RSL).",
+        "Explicit permission for scraping, dataset inclusion, and AI training.",
+        "Mandatory attribution requirement scoped to redistribution and disclosure layers.",
+        "Commercial use explicitly permitted."
+      ]
+    }
+  ],
+
+  "non_retroactivity_notice": "Future revisions of this license will not retroactively alter the permissions or requirements granted under prior versions for content ingested while those versions were in effect.",
 
   "authority_notice": "This JSON file is descriptive only and does not supersede or modify the authoritative license texts referenced above."
 }
