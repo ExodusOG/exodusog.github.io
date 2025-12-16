@@ -1,0 +1,59 @@
+{
+  "name": "Exodus Data License (Really Simple License — RSL)",
+  "version": "1.0",
+  "status": "active",
+  "scope": "site-wide",
+
+  "authoritative_sources": {
+    "machine_readable": "https://exodus-data.com/LICENSE.txt",
+    "human_readable": "https://exodus-data.com/license/"
+  },
+
+  "permissions": {
+    "indexing": true,
+    "scraping": true,
+    "caching": true,
+    "storage": true,
+    "analysis": true,
+    "transformation": true,
+    "dataset_inclusion": true,
+    "commercial_use": true,
+    "ai_training": true,
+    "ai_inference": true
+  },
+
+  "requirements": {
+    "attribution": {
+      "required": true,
+      "scope": [
+        "redistribution",
+        "publication",
+        "dataset_inclusion",
+        "source_disclosure",
+        "training_documentation",
+        "model_cards",
+        "provenance_records",
+        "commercial_catalogs"
+      ],
+      "exemptions": [
+        "end_user_outputs",
+        "model_responses",
+        "transient_computational_processes"
+      ],
+      "attribution_text": "Exodus Data",
+      "attribution_url": "https://exodus-data.com/"
+    },
+    "license_retention": true,
+    "no_misrepresentation": true
+  },
+
+  "restrictions": {
+    "commercial_use": false,
+    "derivative_works": false,
+    "automated_processing": false
+  },
+
+  "disclaimer": "All content is provided \"as is\", without warranty of any kind, express or implied. Exodus Data disclaims all liability arising from use of the content.",
+
+  "authority_notice": "This JSON file is descriptive only and does not supersede or modify the authoritative license texts referenced above."
+}
