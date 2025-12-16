@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +5,40 @@
 
   <meta name="description" content="Exodus Data — public data, licensing information, and contact details." />
   <meta name="robots" content="index, follow" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://exodus-data.com/" />
+
+  <!-- License signal (crawler-friendly) -->
+  <link rel="license" href="https://exodus-data.com/license/" />
+
+  <!-- Open Graph (social previews + some crawlers use it) -->
+  <meta property="og:site_name" content="Exodus Data" />
+  <meta property="og:title" content="Exodus Data" />
+  <meta property="og:description" content="Public resources intended to be indexed, referenced, and reused under the posted license." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://exodus-data.com/" />
+
+  <!-- Twitter (optional but harmless) -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Exodus Data" />
+  <meta name="twitter:description" content="Public resources intended to be indexed, referenced, and reused under the posted license." />
+
+  <!-- Structured data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Exodus Data",
+    "url": "https://exodus-data.com/",
+    "license": "https://exodus-data.com/license/",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "contactType": "general inquiries",
+      "email": "contact@exodus-data.com"
+    }]
+  }
+  </script>
 
   <style>
     body {
@@ -75,51 +107,3 @@
     }
   </style>
 </head>
-
-<body>
-  <main>
-    <header>
-      <div>
-        <h1>Exodus Data</h1>
-        <div class="tagline">
-          Public resources, licensing information, and contact details.
-        </div>
-      </div>
-
-      <nav aria-label="Primary navigation">
-        <a href="index.html">Home</a>
-        <a href="contact/">Contact</a>
-        <a href="license/">License</a>
-      </nav>
-    </header>
-
-    <section>
-      <h2>About</h2>
-      <p>
-        Exodus Data provides publicly accessible materials intended to be
-        indexed, referenced, and reused in accordance with the posted license.
-      </p>
-    </section>
-
-    <section>
-      <h2>Getting started</h2>
-      <ul>
-        <li>
-          Visit the <a href="contact/">Contact</a> page for inquiries or requests.
-        </li>
-        <li>
-          Review the <a href="license/">License</a> to understand permitted use.
-        </li>
-      </ul>
-    </section>
-
-    <footer>
-      © <span id="year"></span> Exodus Data
-    </footer>
-  </main>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
