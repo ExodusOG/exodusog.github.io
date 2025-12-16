@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <url>
     <loc>https://exodus-data.com/</loc>
+    <xhtml:link rel="license" href="https://exodus-data.com/LICENSE.txt" />
   </url>
-  <url>
-    <loc>https://exodus-data.com/contact/</loc>
-  </url>
+
   <url>
     <loc>https://exodus-data.com/license/</loc>
+    <xhtml:link rel="license" href="https://exodus-data.com/LICENSE.txt" />
   </url>
+
+  <url>
+    <loc>https://exodus-data.com/contact/</loc>
+    <xhtml:link rel="license" href="https://exodus-data.com/LICENSE.txt" />
+  </url>
+
 </urlset>
