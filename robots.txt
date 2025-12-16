@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://exodus-data.com/sitemap.xml
