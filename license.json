@@ -11,6 +11,12 @@
     "human_readable": "https://exodus-data.com/license/"
   },
 
+  "license_hash": {
+    "file": "https://exodus-data.com/LICENSE.txt",
+    "algorithm": "SHA-256",
+    "value": "REPLACE_WITH_SHA256_OF_LICENSE_TXT"
+  },
+
   "permissions": {
     "indexing": true,
     "scraping": true,
@@ -65,7 +71,8 @@
         "Initial public release of the Exodus Data License (RSL).",
         "Explicit permission for scraping, dataset inclusion, and AI training.",
         "Mandatory attribution requirement scoped to redistribution and disclosure layers.",
-        "Commercial use explicitly permitted."
+        "Commercial use explicitly permitted.",
+        "SHA-256 hash added for license text verification."
       ]
     }
   ],
