@@ -67,6 +67,32 @@
       margin: 0 auto;
     }
 
+    nav {
+      margin-bottom: 2rem;
+    }
+
+    nav a,
+    nav .current {
+      margin-right: 1rem;
+      color: #4ea1ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:last-child {
+      margin-right: 0;
+    }
+
+    nav .current {
+      cursor: default;
+      opacity: 0.9;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     h1 {
       font-size: 2rem;
       margin-bottom: 1rem;
@@ -74,16 +100,11 @@
 
     a {
       color: #4ea1ff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
 
     .email {
       font-size: 1.1rem;
-      font-weight: 500;
+      font-weight: 600;
       margin-top: 1rem;
     }
 
@@ -97,6 +118,12 @@
 
 <body>
   <main>
+    <nav aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <span class="current" aria-current="page">Contact</span>
+      <a href="../license/">License</a>
+    </nav>
+
     <h1>Contact</h1>
 
     <p>
