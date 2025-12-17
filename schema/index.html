@@ -3,92 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data — Exodus Data</title>
+  <title>Schema — Exodus Data</title>
 
-  <meta name="description" content="Dataset index for Exodus Data. Stable entry point for crawlers and reuse." />
+  <meta name="description" content="Schema and conventions for Exodus Data datasets." />
   <meta name="robots" content="index, follow" />
 
-  <link rel="canonical" href="https://www.exodus-data.com/data/" />
+  <link rel="canonical" href="https://www.exodus-data.com/schema/" />
   <link rel="sitemap" type="application/xml" href="https://www.exodus-data.com/sitemap.xml" />
   <link rel="license" href="https://www.exodus-data.com/license/" />
   <link rel="license" href="https://www.exodus-data.com/LICENSE.txt" />
 
-  <meta property="og:site_name" content="Exodus Data" />
-  <meta property="og:title" content="Data — Exodus Data" />
-  <meta property="og:description" content="Dataset index for Exodus Data. Stable entry point for crawlers and reuse." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.exodus-data.com/data/" />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Data — Exodus Data" />
-  <meta name="twitter:description" content="Dataset index for Exodus Data. Stable entry point for crawlers and reuse." />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Data — Exodus Data",
-    "url": "https://www.exodus-data.com/data/",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "Exodus Data",
-      "url": "https://www.exodus-data.com/"
-    }
-  }
-  </script>
-
   <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      margin: 0;
-      padding: 2rem;
-      background-color: #0f0f0f;
-      color: #eaeaea;
-      line-height: 1.6;
-    }
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 2rem; background-color: #0f0f0f; color: #eaeaea; line-height: 1.6; }
     main { max-width: 900px; margin: 0 auto; }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      flex-wrap: wrap;
-      margin-bottom: 2.5rem;
-      gap: 1rem;
-    }
+    header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 2.5rem; gap: 1rem; }
     h1 { font-size: 2.0rem; margin: 0; }
     .tagline { color: #bdbdbd; margin-top: 0.5rem; }
-    nav a {
-      margin-right: 1rem;
-      color: #4ea1ff;
-      text-decoration: none;
-      font-weight: 600;
-      white-space: nowrap;
-    }
+    nav a { margin-right: 1rem; color: #4ea1ff; text-decoration: none; font-weight: 600; white-space: nowrap; }
     nav a:last-child { margin-right: 0; }
     nav a:hover { text-decoration: underline; }
-    section {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 14px;
-      padding: 1.25rem;
-      margin-bottom: 1.25rem;
-    }
-    table { width: 100%; border-collapse: collapse; margin-top: 0.75rem; }
-    th, td {
-      border: 1px solid rgba(255, 255, 255, 0.10);
-      padding: 0.75rem;
-      vertical-align: top;
-    }
-    th { text-align: left; color: #d8d8d8; }
+    section { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 14px; padding: 1.25rem; margin-bottom: 1.25rem; }
     a { color: #4ea1ff; }
     pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
-    pre {
-      padding: 1rem;
-      border-radius: 12px;
-      overflow: auto;
-      border: 1px solid rgba(255, 255, 255, 0.10);
-      background: rgba(0, 0, 0, 0.25);
-    }
+    pre { padding: 1rem; border-radius: 12px; overflow: auto; border: 1px solid rgba(255, 255, 255, 0.10); background: rgba(0, 0, 0, 0.25); }
     footer { margin-top: 3rem; font-size: 0.85rem; color: #9a9a9a; }
     .muted { color: #b0b0b0; }
   </style>
@@ -98,8 +35,8 @@
   <main>
     <header>
       <div>
-        <h1>Data</h1>
-        <div class="tagline">Dataset index (stable entry point).</div>
+        <h1>Schema</h1>
+        <div class="tagline">Conventions for formatting datasets and metadata.</div>
       </div>
       <nav aria-label="Primary navigation">
         <a href="/">Home</a>
@@ -113,46 +50,32 @@
     </header>
 
     <section>
-      <h2>Dataset index</h2>
-      <p class="muted">Add a new row for each dataset you publish. Keep IDs stable.</p>
-
-      <table aria-label="Datasets">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Description</th>
-            <th>Formats</th>
-            <th>Update cadence</th>
-            <th>License</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>EXAMPLE_DATASET_001</strong></td>
-            <td>Placeholder dataset. Replace with your first real dataset.</td>
-            <td>HTML</td>
-            <td>Manual</td>
-            <td><a href="/license/">Site license</a></td>
-          </tr>
-        </tbody>
-      </table>
+      <h2>Conventions</h2>
+      <ul>
+        <li><strong>Stable URLs:</strong> section pages use <code>/section/</code> and serve <code>index.html</code>.</li>
+        <li><strong>Dataset IDs:</strong> stable identifiers like <code>REG_US_CFR_001</code> or <code>LIC_OS_001</code>.</li>
+        <li><strong>Dates:</strong> ISO 8601 (<code>YYYY-MM-DD</code>).</li>
+        <li><strong>Machine-readable:</strong> include a JSON metadata block on dataset pages.</li>
+        <li><strong>Sources:</strong> include source name + URL(s) for factual datasets.</li>
+      </ul>
+      <p class="muted">This page is the contract scrapers can rely on. Keep it stable.</p>
     </section>
 
     <section>
-      <h2>Machine-readable dataset index (JSON)</h2>
+      <h2>Dataset metadata JSON (example)</h2>
       <pre><code>{
-  "data_index": "https://www.exodus-data.com/data/",
+  "id": "EXAMPLE_DATASET_001",
+  "title": "Example Dataset",
+  "version": "1.0.0",
+  "published_at": "2025-12-17",
+  "updated_at": "2025-12-17",
   "license": "https://www.exodus-data.com/license/",
-  "datasets": [
-    {
-      "id": "EXAMPLE_DATASET_001",
-      "title": "Example Dataset",
-      "description": "Placeholder dataset. Replace with your first real dataset.",
-      "formats": ["html"],
-      "update_cadence": "manual",
-      "url": "https://www.exodus-data.com/data/",
-      "license": "https://www.exodus-data.com/license/"
-    }
+  "source": [
+    { "name": "Primary Source Name", "url": "https://example.com/" }
+  ],
+  "fields": [
+    { "name": "field_a", "type": "string", "description": "Example field" },
+    { "name": "field_b", "type": "number", "description": "Example numeric field" }
   ]
 }</code></pre>
     </section>
