@@ -4,40 +4,35 @@ Copyright © Exodus Data
 This license governs all content published at https://www.exodus-data.com/ (“Content”).
 
 --------------------------------------------------
-1) ACCESS AND NON-COMMERCIAL PERMISSION
+1) ACCESS, CRAWLING, AND INDEXING
 --------------------------------------------------
-You are permitted to access, crawl, scrape, index, cache, store, and analyze publicly accessible Content for
-NON-COMMERCIAL purposes, provided you comply with this license.
-
-“Non-Commercial” means use that is not primarily intended for or directed toward commercial advantage,
-monetary compensation, or business benefit.
+Access to publicly available Content, including crawling, scraping, indexing, caching, and storage, is permitted.
 
 --------------------------------------------------
-2) COMMERCIAL RIGHTS ARE NOT GRANTED
+2) NO COMMERCIAL RIGHTS GRANTED UNDER THIS LICENSE
 --------------------------------------------------
-NO COMMERCIAL RIGHTS ARE GRANTED UNDER THIS LICENSE.
+No commercial rights are granted under this license.
 
-Commercial use of the Content (or any derivatives) is PROHIBITED unless you obtain a separate
-PAID COMMERCIAL LICENSE from Exodus Data in advance.
+Any commercial use of the Content or derivatives requires a separate PAID commercial license from Exodus Data.
+
+The absence of commercial rights under this license applies regardless of how the Content was accessed,
+including via crawling, scraping, indexing, caching, or storage.
 
 --------------------------------------------------
 3) COMMERCIAL USE (DEFINITION)
 --------------------------------------------------
 “Commercial use” includes, without limitation:
-• Use in any product, service, or offering that is sold, licensed, subscribed to, monetized, or ad-supported
+• Use in any product or service that is sold, licensed, subscribed to, monetized, or ad-supported
 • Redistribution or resale of the Content or derivatives
 • Use by or for a business entity for internal operations, analytics, or decision-making
-• Use to train, fine-tune, evaluate, or improve a commercial AI system or model
-• Use in a dataset, index, catalog, or knowledge base that is sold, licensed, monetized, or used commercially
+• Training, fine-tuning, evaluation, or operation of commercial AI systems or models
+• Inclusion in a dataset, index, catalog, or knowledge base used commercially
 
 --------------------------------------------------
 4) ATTRIBUTION (FOR REDISTRIBUTION / PUBLICATION)
 --------------------------------------------------
-If you redistribute or publicly publish Content or derivatives (including in datasets), you must provide
-attribution to “Exodus Data” and include a reference URL to https://www.exodus-data.com/.
-
-Attribution is not required in individual end-user outputs, provided attribution is preserved at the dataset
-or documentation level where applicable.
+If you redistribute or publicly publish Content or derivatives (including in datasets), you must provide attribution
+to “Exodus Data” and include a reference URL to https://www.exodus-data.com/.
 
 --------------------------------------------------
 5) NO MISREPRESENTATION
@@ -47,17 +42,17 @@ You may not present the Content in a manner that implies endorsement by Exodus D
 --------------------------------------------------
 6) DISCLAIMER
 --------------------------------------------------
-THE CONTENT IS PROVIDED “AS IS” WITHOUT WARRANTY OF ANY KIND. EXODUS DATA DISCLAIMS ALL LIABILITY
-ARISING FROM USE OF THE CONTENT.
+THE CONTENT IS PROVIDED “AS IS” WITHOUT WARRANTY OF ANY KIND. EXODUS DATA DISCLAIMS ALL LIABILITY ARISING
+FROM USE OF THE CONTENT.
 
 --------------------------------------------------
 7) COMMERCIAL LICENSING
 --------------------------------------------------
-To obtain a PAID commercial license, contact Exodus Data:
+To obtain a PAID commercial license, contact:
 https://www.exodus-data.com/contact/
 
 --------------------------------------------------
-8) AUTHORITATIVE TERMS
+8) AUTHORITATIVE POLICY PAGE
 --------------------------------------------------
 The authoritative human-readable policy page is:
 https://www.exodus-data.com/license/
