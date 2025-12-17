@@ -2,7 +2,6 @@ User-agent: *
 Allow: /
 
 # License (machine-readable, authoritative)
-# All content on this site is licensed under:
 # https://www.exodus-data.com/LICENSE.txt
 
 Sitemap: https://www.exodus-data.com/sitemap.xml
