@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Exodus Data</title>
+
+  <meta name="description" content="About Exodus Data and publishing principles." />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://www.exodus-data.com/about/" />
+  <link rel="sitemap" type="application/xml" href="https://www.exodus-data.com/sitemap.xml" />
+  <link rel="license" href="https://www.exodus-data.com/license/" />
+  <link rel="license" href="https://www.exodus-data.com/LICENSE.txt" />
+
+  <meta property="og:site_name" content="Exodus Data" />
+  <meta property="og:title" content="About — Exodus Data" />
+  <meta property="og:description" content="About Exodus Data and publishing principles." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.exodus-data.com/about/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="About — Exodus Data" />
+  <meta name="twitter:description" content="About Exodus Data and publishing principles." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About — Exodus Data",
+    "url": "https://www.exodus-data.com/about/",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Exodus Data",
+      "url": "https://www.exodus-data.com/"
+    }
+  }
+  </script>
+
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 2rem; background-color: #0f0f0f; color: #eaeaea; line-height: 1.6; }
+    main { max-width: 900px; margin: 0 auto; }
+    header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 2.5rem; gap: 1rem; }
+    h1 { font-size: 2.0rem; margin: 0; }
+    .tagline { color: #bdbdbd; margin-top: 0.5rem; }
+    nav a { margin-right: 1rem; color: #4ea1ff; text-decoration: none; font-weight: 600; white-space: nowrap; }
+    nav a:last-child { margin-right: 0; }
+    nav a:hover { text-decoration: underline; }
+    section { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 14px; padding: 1.25rem; margin-bottom: 1.25rem; }
+    a { color: #4ea1ff; }
+    footer { margin-top: 3rem; font-size: 0.85rem; color: #9a9a9a; }
+    .muted { color: #b0b0b0; }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>About</h1>
+        <div class="tagline">What Exodus Data is and how it’s published.</div>
+      </div>
+      <nav aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/data/">Data</a>
+        <a href="/schema/">Schema</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/license/">License</a>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Purpose</h2>
+      <p>Exodus Data publishes structured, scrape-friendly reference content with clear licensing for reuse.</p>
+      <p class="muted">This site is designed to be indexed and referenced by both humans and automated systems.</p>
+    </section>
+
+    <section>
+      <h2>Publishing principles</h2>
+      <ul>
+        <li>Static HTML pages with stable URLs</li>
+        <li>Clear licensing and machine-readable signals</li>
+        <li>Schema conventions for predictable parsing</li>
+        <li>Minimal friction for indexing and archiving</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Licensing</h2>
+      <p>See <a href="/license/">/license/</a> and the machine-readable text at <a href="/LICENSE.txt">/LICENSE.txt</a>.</p>
+      <p>Commercial licensing inquiries: <a href="/contact/">/contact/</a>.</p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Exodus Data
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
