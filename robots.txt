@@ -3,6 +3,6 @@ Allow: /
 
 # License (machine-readable, authoritative)
 # All content on this site is licensed under:
-# https://exodus-data.com/LICENSE.txt
+# https://www.exodus-data.com/LICENSE.txt
 
-Sitemap: https://exodus-data.com/sitemap.xml
+Sitemap: https://www.exodus-data.com/sitemap.xml
