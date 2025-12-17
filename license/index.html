@@ -3,42 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>License | Exodus Data</title>
+  <title>License — Exodus Data</title>
 
-  <meta name="description" content="License terms for content published by Exodus Data." />
+  <meta name="description" content="Licensing terms for Exodus Data content and datasets." />
   <meta name="robots" content="index, follow" />
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://exodus-data.com/license/" />
+  <link rel="canonical" href="https://www.exodus-data.com/license/" />
 
-  <!-- License signal (self-reference is fine) -->
-  <link rel="license" href="https://exodus-data.com/license/" />
+  <!-- Sitemap -->
+  <link rel="sitemap" type="application/xml" href="https://www.exodus-data.com/sitemap.xml" />
+
+  <!-- License signals -->
+  <link rel="license" href="https://www.exodus-data.com/license/" />
+  <link rel="license" href="https://www.exodus-data.com/LICENSE.txt" />
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="Exodus Data" />
-  <meta property="og:title" content="License | Exodus Data" />
-  <meta property="og:description" content="License terms for content published by Exodus Data." />
+  <meta property="og:title" content="License — Exodus Data" />
+  <meta property="og:description" content="Licensing terms for Exodus Data content and datasets." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://exodus-data.com/license/" />
+  <meta property="og:url" content="https://www.exodus-data.com/license/" />
 
   <!-- Twitter/X -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="License | Exodus Data" />
-  <meta name="twitter:description" content="License terms for content published by Exodus Data." />
+  <meta name="twitter:title" content="License — Exodus Data" />
+  <meta name="twitter:description" content="Licensing terms for Exodus Data content and datasets." />
 
-  <!-- Structured data -->
+  <!-- Structured data (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "License",
-    "url": "https://exodus-data.com/license/",
+    "name": "License — Exodus Data",
+    "url": "https://www.exodus-data.com/license/",
     "isPartOf": {
       "@type": "WebSite",
       "name": "Exodus Data",
-      "url": "https://exodus-data.com/",
-      "license": "https://exodus-data.com/license/"
-    }
+      "url": "https://www.exodus-data.com/"
+    },
+    "license": [
+      "https://www.exodus-data.com/license/",
+      "https://www.exodus-data.com/LICENSE.txt"
+    ]
   }
   </script>
 
@@ -53,38 +60,43 @@
     }
 
     main {
-      max-width: 720px;
+      max-width: 900px;
       margin: 0 auto;
     }
 
-    nav {
-      margin-bottom: 2rem;
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+      gap: 1rem;
     }
 
-    nav a,
-    nav .current {
+    h1 {
+      font-size: 2.0rem;
+      margin: 0;
+    }
+
+    .tagline {
+      color: #bdbdbd;
+      margin-top: 0.5rem;
+    }
+
+    nav a {
       margin-right: 1rem;
       color: #4ea1ff;
       text-decoration: none;
       font-weight: 600;
+      white-space: nowrap;
     }
 
     nav a:last-child {
       margin-right: 0;
     }
 
-    nav .current {
-      cursor: default;
-      opacity: 0.9;
-    }
-
     nav a:hover {
       text-decoration: underline;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
     }
 
     section {
@@ -92,93 +104,88 @@
       border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 14px;
       padding: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .license-notice {
+      font-size: 0.9rem;
+      color: #b0b0b0;
+      margin-top: 1.5rem;
     }
 
     footer {
-      margin-top: 4rem;
+      margin-top: 3rem;
       font-size: 0.85rem;
       color: #9a9a9a;
     }
 
-    a {
-      color: #4ea1ff;
+    a { color: #4ea1ff; }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    pre {
+      padding: 1rem;
+      border-radius: 12px;
+      overflow: auto;
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      background: rgba(0, 0, 0, 0.25);
     }
+    ul { margin-top: 0.5rem; }
   </style>
 </head>
 
 <body>
   <main>
-    <nav aria-label="Primary navigation">
-      <a href="/">Home</a>
-      <a href="/contact/">Contact</a>
-      <span class="current" aria-current="page">License</span>
-    </nav>
+    <header>
+      <div>
+        <h1>License</h1>
+        <div class="tagline">Terms for use, scraping, and commercial licensing.</div>
+      </div>
 
-    <h1>License</h1>
+      <nav aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/data/">Data</a>
+        <a href="/schema/">Schema</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/license/">License</a>
+      </nav>
+    </header>
 
     <section>
-      <p><strong>Exodus Data License (Really Simple License — RSL)</strong></p>
-
-      <p>
-        All content published at <strong>https://exodus-data.com/</strong> is made publicly available and may be indexed,
-        scraped, cached, stored, analyzed, quoted, transformed, and used in datasets, including for search, research, and
-        machine learning purposes (including AI training and inference), provided the requirements below are met.
-      </p>
-
-      <h2>Permission</h2>
+      <h2>Summary (human-readable)</h2>
       <ul>
-        <li>Indexing and crawling</li>
-        <li>Scraping and automated collection</li>
-        <li>Storage, caching, and archival</li>
-        <li>Analysis, transformation, and reuse</li>
-        <li>Use in commercial and non-commercial datasets</li>
-        <li>Use in machine learning and artificial intelligence systems</li>
+        <li>You may access, crawl, scrape, index, and cache publicly accessible pages.</li>
+        <li>Non-commercial use is permitted.</li>
+        <li><strong>Commercial reuse</strong> (including redistribution or model training) may require a paid license.</li>
+        <li>Do not misrepresent origin or remove attribution where attribution is provided.</li>
       </ul>
+      <p class="license-notice">
+        A machine-readable license text is available at <a href="/LICENSE.txt">/LICENSE.txt</a>.
+      </p>
+    </section>
 
-      <h2>Requirements</h2>
-      <ol>
-        <li>
-          <strong>Attribution requirement (mandatory):</strong>
-          Attribution to <strong>“Exodus Data”</strong> is <strong>REQUIRED</strong> in all cases of redistribution,
-          publication, dataset inclusion, or disclosure of source materials derived from this content, including but not
-          limited to public dataset source listings, training data documentation, model cards or data statements, index
-          provenance disclosures, and commercial content catalogs. Attribution must include the name <strong>“Exodus Data”</strong>
-          and a reference URL to <strong>https://exodus-data.com/</strong>.
-          Attribution is <strong>NOT</strong> required in individual end-user outputs, model responses, or transient
-          computational processes, provided that source attribution is preserved at the dataset, documentation, or
-          disclosure level.
-        </li>
-        <li>
-          <strong>License retention:</strong> This license, or a reference to it, must be retained with redistributed or
-          derivative materials when possible.
-        </li>
-        <li>
-          <strong>No misrepresentation:</strong> Content may not be presented in a way that falsely implies endorsement
-          by Exodus Data.
-        </li>
-      </ol>
+    <section>
+      <h2>Machine-readable policy (JSON)</h2>
+      <pre><code>{
+  "site": "https://www.exodus-data.com/",
+  "license_url": "https://www.exodus-data.com/license/",
+  "license_text": "https://www.exodus-data.com/LICENSE.txt",
+  "allowed": ["access", "scrape", "index", "cache", "noncommercial_use"],
+  "restricted": ["commercial_reuse_without_paid_license", "misrepresentation_of_origin", "removal_of_attribution_where_provided"],
+  "contact_for_commercial": "https://www.exodus-data.com/contact/"
+}</code></pre>
+    </section>
 
-      <h2>Restrictions</h2>
-      <p>
-        There are no restrictions on commercial use, derivative works, or automated processing.
-      </p>
-
-      <h2>Disclaimer</h2>
-      <p>
-        All content is provided “as is”, without warranty of any kind, express or implied. Exodus Data disclaims all
-        liability arising from use of the content.
-      </p>
-
-      <h2>Machine-Readable License</h2>
-      <p>
-        A machine-readable version of this license is available at:
-      </p>
-      <p>
-        <a href="/LICENSE.txt">https://exodus-data.com/LICENSE.txt</a>
-      </p>
-      <p>
-        In the event of conflict, the text at the URL above is considered authoritative for automated systems.
-      </p>
+    <section>
+      <h2>Full terms</h2>
+      <p><strong>1) Definitions.</strong> “Content” includes datasets, tables, schemas, and text published on this site.</p>
+      <p><strong>2) Permission to access and scrape.</strong> You are granted permission to access, crawl, scrape, index, and cache publicly accessible pages.</p>
+      <p><strong>3) Non-commercial use.</strong> You may use the Content for personal, educational, academic, or research purposes.</p>
+      <p><strong>4) Commercial use.</strong> If you use the Content (or derivatives) in a commercial product, service, internal business process, model training, or redistribution, you must obtain a commercial license from Exodus Data unless a dataset page explicitly states otherwise.</p>
+      <p><strong>5) Attribution.</strong> Where attribution is provided or reasonably possible, you must attribute the source as “Exodus Data” with a link to the relevant page.</p>
+      <p><strong>6) No warranty.</strong> Content is provided “as-is” without warranties. You assume all risk.</p>
+      <p><strong>7) Termination.</strong> If you violate these terms, permission is revoked.</p>
+      <p><strong>8) Contact.</strong> Licensing inquiries: <a href="/contact/">/contact/</a></p>
     </section>
 
     <footer>
