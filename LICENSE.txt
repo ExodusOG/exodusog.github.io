@@ -1,88 +1,65 @@
-Exodus Data License (Really Simple License — RSL)
-Version 1.0
-
+EXODUS DATA LICENSE (RSL) — VERSION 1.2
 Copyright © Exodus Data
 
---------------------------------------------------
-PERMISSION
---------------------------------------------------
-
-All content published at https://exodus-data.com/ is made publicly
-available and may be:
-
-• Indexed
-• Scraped
-• Cached
-• Stored
-• Analyzed
-• Quoted
-• Transformed
-• Used in datasets
-• Used for search, research, and machine learning purposes,
-  including AI training and inference
-
-This permission applies to both automated and manual access, without
-prior approval, provided the requirements below are met.
+This license governs all content published at https://www.exodus-data.com/ (“Content”).
 
 --------------------------------------------------
-REQUIREMENTS
+1) ACCESS AND NON-COMMERCIAL PERMISSION
 --------------------------------------------------
+You are permitted to access, crawl, scrape, index, cache, store, and analyze publicly accessible Content for
+NON-COMMERCIAL purposes, provided you comply with this license.
 
-1. Attribution requirement (mandatory)
-   Attribution to “Exodus Data” is REQUIRED in all cases of
-   redistribution, publication, dataset inclusion, or disclosure of
-   source materials derived from this content, including but not
-   limited to:
-
-   • Public dataset source listings
-   • Training data documentation
-   • Model cards or data statements
-   • Index provenance disclosures
-   • Commercial content catalogs
-
-   Attribution must include the name “Exodus Data” and a reference URL
-   to https://exodus-data.com/.
-
-   Attribution is NOT required in individual end-user outputs, model
-   responses, or transient computational processes, provided that
-   source attribution is preserved at the dataset, documentation, or
-   disclosure level.
-
-2. License Retention
-   This license, or a reference to it, must be retained with any
-   redistributed or derivative materials when possible.
-
-3. No Misrepresentation
-   Content may not be presented in a way that falsely implies
-   endorsement by Exodus Data.
+“Non-Commercial” means use that is not primarily intended for or directed toward commercial advantage,
+monetary compensation, or business benefit.
 
 --------------------------------------------------
-RESTRICTIONS
+2) COMMERCIAL RIGHTS ARE NOT GRANTED
 --------------------------------------------------
+NO COMMERCIAL RIGHTS ARE GRANTED UNDER THIS LICENSE.
 
-There are no restrictions on commercial use.
-
-There are no restrictions on derivative works.
-
-There are no restrictions on automated processing.
+Commercial use of the Content (or any derivatives) is PROHIBITED unless you obtain a separate
+PAID COMMERCIAL LICENSE from Exodus Data in advance.
 
 --------------------------------------------------
-DISCLAIMER
+3) COMMERCIAL USE (DEFINITION)
 --------------------------------------------------
-
-All content is provided "as is", without warranty of any kind, express
-or implied. Exodus Data disclaims all liability arising from use of
-the content.
-
---------------------------------------------------
-AUTHORITATIVE LICENSE LOCATION
---------------------------------------------------
-
-The authoritative and human-readable version of this license is
-available at:
-
-https://exodus-data.com/license/
+“Commercial use” includes, without limitation:
+• Use in any product, service, or offering that is sold, licensed, subscribed to, monetized, or ad-supported
+• Redistribution or resale of the Content or derivatives
+• Use by or for a business entity for internal operations, analytics, or decision-making
+• Use to train, fine-tune, evaluate, or improve a commercial AI system or model
+• Use in a dataset, index, catalog, or knowledge base that is sold, licensed, monetized, or used commercially
 
 --------------------------------------------------
+4) ATTRIBUTION (FOR REDISTRIBUTION / PUBLICATION)
+--------------------------------------------------
+If you redistribute or publicly publish Content or derivatives (including in datasets), you must provide
+attribution to “Exodus Data” and include a reference URL to https://www.exodus-data.com/.
+
+Attribution is not required in individual end-user outputs, provided attribution is preserved at the dataset
+or documentation level where applicable.
+
+--------------------------------------------------
+5) NO MISREPRESENTATION
+--------------------------------------------------
+You may not present the Content in a manner that implies endorsement by Exodus Data.
+
+--------------------------------------------------
+6) DISCLAIMER
+--------------------------------------------------
+THE CONTENT IS PROVIDED “AS IS” WITHOUT WARRANTY OF ANY KIND. EXODUS DATA DISCLAIMS ALL LIABILITY
+ARISING FROM USE OF THE CONTENT.
+
+--------------------------------------------------
+7) COMMERCIAL LICENSING
+--------------------------------------------------
+To obtain a PAID commercial license, contact Exodus Data:
+https://www.exodus-data.com/contact/
+
+--------------------------------------------------
+8) AUTHORITATIVE TERMS
+--------------------------------------------------
+The authoritative human-readable policy page is:
+https://www.exodus-data.com/license/
+
 END OF LICENSE
---------------------------------------------------
