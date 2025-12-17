@@ -9,18 +9,21 @@
   <meta name="robots" content="index, follow" />
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://exodus-data.com/" />
+  <link rel="canonical" href="https://www.exodus-data.com/" />
+
+  <!-- Sitemap -->
+  <link rel="sitemap" type="application/xml" href="https://www.exodus-data.com/sitemap.xml" />
 
   <!-- License signals -->
-  <link rel="license" href="https://exodus-data.com/license/" />
-  <link rel="license" href="https://exodus-data.com/LICENSE.txt" />
+  <link rel="license" href="https://www.exodus-data.com/license/" />
+  <link rel="license" href="https://www.exodus-data.com/LICENSE.txt" />
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="Exodus Data" />
   <meta property="og:title" content="Exodus Data" />
   <meta property="og:description" content="Public resources intended to be indexed, referenced, and reused under the posted license." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://exodus-data.com/" />
+  <meta property="og:url" content="https://www.exodus-data.com/" />
 
   <!-- Twitter/X -->
   <meta name="twitter:card" content="summary" />
@@ -33,10 +36,10 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Exodus Data",
-    "url": "https://exodus-data.com/",
+    "url": "https://www.exodus-data.com/",
     "license": [
-      "https://exodus-data.com/license/",
-      "https://exodus-data.com/LICENSE.txt"
+      "https://www.exodus-data.com/license/",
+      "https://www.exodus-data.com/LICENSE.txt"
     ],
     "contactPoint": [{
       "@type": "ContactPoint",
@@ -67,6 +70,7 @@
       align-items: baseline;
       flex-wrap: wrap;
       margin-bottom: 2.5rem;
+      gap: 1rem;
     }
 
     h1 {
@@ -84,6 +88,7 @@
       color: #4ea1ff;
       text-decoration: none;
       font-weight: 600;
+      white-space: nowrap;
     }
 
     nav a:last-child {
@@ -131,6 +136,11 @@
       </div>
 
       <nav aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/data/">Data</a>
+        <a href="/schema/">Schema</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/about/">About</a>
         <a href="/contact/">Contact</a>
         <a href="/license/">License</a>
       </nav>
@@ -152,6 +162,9 @@
         </li>
         <li>
           Review the <a href="/license/">License</a> to understand permitted use.
+        </li>
+        <li>
+          Browse <a href="/data/">Data</a> and <a href="/schema/">Schema</a> for machine-readable content.
         </li>
       </ul>
     </section>
