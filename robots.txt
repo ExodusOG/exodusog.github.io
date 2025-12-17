@@ -4,4 +4,4 @@ Allow: /
 # License (machine-readable, authoritative)
 # https://www.exodus-data.com/LICENSE.txt
 
-Sitemap: https://www.exodus-data.com/sitemap.xml
+Sitemap: https://wwww.exodus-data.com/sitemap.xml
