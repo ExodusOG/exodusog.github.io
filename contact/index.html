@@ -3,52 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Exodus Data</title>
+  <title>Contact — Exodus Data</title>
 
-  <meta name="description" content="Contact Exodus Data for inquiries, licensing, or general communication." />
+  <meta name="description" content="Contact Exodus Data for licensing, partnerships, or general inquiries." />
   <meta name="robots" content="index, follow" />
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://exodus-data.com/contact/" />
+  <link rel="canonical" href="https://www.exodus-data.com/contact/" />
 
-  <!-- License signal (crawler-friendly) -->
-  <link rel="license" href="https://exodus-data.com/license/" />
+  <!-- Sitemap -->
+  <link rel="sitemap" type="application/xml" href="https://www.exodus-data.com/sitemap.xml" />
+
+  <!-- License signals -->
+  <link rel="license" href="https://www.exodus-data.com/license/" />
+  <link rel="license" href="https://www.exodus-data.com/LICENSE.txt" />
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="Exodus Data" />
-  <meta property="og:title" content="Contact | Exodus Data" />
-  <meta property="og:description" content="Contact Exodus Data for inquiries, licensing, or general communication." />
+  <meta property="og:title" content="Contact — Exodus Data" />
+  <meta property="og:description" content="Contact Exodus Data for licensing, partnerships, or general inquiries." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://exodus-data.com/contact/" />
+  <meta property="og:url" content="https://www.exodus-data.com/contact/" />
 
   <!-- Twitter/X -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Contact | Exodus Data" />
-  <meta name="twitter:description" content="Contact Exodus Data for inquiries, licensing, or general communication." />
+  <meta name="twitter:title" content="Contact — Exodus Data" />
+  <meta name="twitter:description" content="Contact Exodus Data for licensing, partnerships, or general inquiries." />
 
-  <!-- Structured data -->
+  <!-- Structured data (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "name": "Contact",
-    "url": "https://exodus-data.com/contact/",
+    "name": "Contact — Exodus Data",
+    "url": "https://www.exodus-data.com/contact/",
     "isPartOf": {
       "@type": "WebSite",
       "name": "Exodus Data",
-      "url": "https://exodus-data.com/",
-      "license": "https://exodus-data.com/license/"
+      "url": "https://www.exodus-data.com/"
     },
-    "mainEntity": {
-      "@type": "Organization",
-      "name": "Exodus Data",
-      "url": "https://exodus-data.com/",
-      "contactPoint": [{
-        "@type": "ContactPoint",
-        "contactType": "general inquiries",
-        "email": "contact@exodus-data.com"
-      }]
-    }
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "contactType": "general inquiries",
+      "email": "contact@exodus-data.com"
+    }]
   }
   </script>
 
@@ -63,81 +61,106 @@
     }
 
     main {
-      max-width: 720px;
+      max-width: 900px;
       margin: 0 auto;
     }
 
-    nav {
-      margin-bottom: 2rem;
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+      gap: 1rem;
     }
 
-    nav a,
-    nav .current {
+    h1 {
+      font-size: 2.0rem;
+      margin: 0;
+    }
+
+    .tagline {
+      color: #bdbdbd;
+      margin-top: 0.5rem;
+    }
+
+    nav a {
       margin-right: 1rem;
       color: #4ea1ff;
       text-decoration: none;
       font-weight: 600;
+      white-space: nowrap;
     }
 
     nav a:last-child {
       margin-right: 0;
     }
 
-    nav .current {
-      cursor: default;
-      opacity: 0.9;
-    }
-
     nav a:hover {
       text-decoration: underline;
     }
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    a {
-      color: #4ea1ff;
-    }
-
-    .email {
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-top: 1rem;
+    section {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 1.25rem;
+      margin-bottom: 1.25rem;
     }
 
     footer {
-      margin-top: 4rem;
+      margin-top: 3rem;
       font-size: 0.85rem;
       color: #9a9a9a;
     }
+
+    a { color: #4ea1ff; }
+    .muted { color: #b0b0b0; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
   </style>
 </head>
 
 <body>
   <main>
-    <nav aria-label="Primary navigation">
-      <a href="/">Home</a>
-      <span class="current" aria-current="page">Contact</span>
-      <a href="/license/">License</a>
-    </nav>
+    <header>
+      <div>
+        <h1>Contact</h1>
+        <div class="tagline">Licensing, partnerships, and general inquiries.</div>
+      </div>
 
-    <h1>Contact</h1>
+      <nav aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/data/">Data</a>
+        <a href="/schema/">Schema</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/license/">License</a>
+      </nav>
+    </header>
 
-    <p>
-      For general inquiries, licensing questions, or other communications,
-      please contact us at:
-    </p>
+    <section>
+      <h2>Email</h2>
+      <p>
+        <strong>contact@exodus-data.com</strong>
+      </p>
+      <p class="muted">
+        Keep this page simple (no forms) for reliability and scrape-friendliness.
+      </p>
+    </section>
 
-    <p class="email">
-      <a href="mailto:contact@exodus-data.com">contact@exodus-data.com</a>
-    </p>
-
-    <p>
-      We do not use contact forms or third-party processors.
-      Email is the preferred and authoritative method of communication.
-    </p>
+    <section>
+      <h2>For commercial licensing</h2>
+      <ul>
+        <li>Your organization name</li>
+        <li>Which pages/datasets you plan to use</li>
+        <li>Use case (internal analytics, redistribution, model training, etc.)</li>
+        <li>Expected volume and timeframe</li>
+      </ul>
+      <p class="muted">
+        License terms: <a href="/license/">/license/</a> (machine-readable text: <a href="/LICENSE.txt">/LICENSE.txt</a>)
+      </p>
+    </section>
 
     <footer>
       © <span id="year"></span> Exodus Data
