@@ -67,7 +67,7 @@
     header {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      align-items: flex-start; /* changed */
       flex-wrap: wrap;
       margin-bottom: 2.5rem;
       gap: 1rem;
@@ -81,6 +81,11 @@
     .tagline {
       color: #bdbdbd;
       margin-top: 0.5rem;
+    }
+
+    nav {               /* added */
+      margin-left: auto;
+      text-align: right;
     }
 
     nav a {
