@@ -59,7 +59,7 @@
     header {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      align-items: flex-start; /* CHANGED: was baseline */
       flex-wrap: wrap;
       margin-bottom: 2.5rem;
       gap: 1rem;
@@ -76,7 +76,6 @@
     nav a:last-child { margin-right: 0; }
     nav a:hover { text-decoration: underline; }
 
-    /* ONLY CHANGE: match About title size so nav aligns the same */
     h1 {
       font-size: 2.0rem;
       margin: 0;
