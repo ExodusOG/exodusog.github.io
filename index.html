@@ -59,10 +59,15 @@
     header {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start; /* FIX: uniform top-right nav */
+      align-items: flex-start; /* CHANGED */
       flex-wrap: wrap;
       margin-bottom: 2.5rem;
       gap: 1rem;
+    }
+
+    nav {               /* ADDED */
+      margin-left: auto;
+      text-align: right;
     }
 
     nav a {
