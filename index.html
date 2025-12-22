@@ -56,21 +56,40 @@
       margin: 0 auto;
     }
 
-    header {
+    /* === CANONICAL HEADER + NAV (site-wide) === */
+    header.site-header {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start; /* CHANGED */
+      align-items: flex-start;
       flex-wrap: wrap;
-      margin-bottom: 2.5rem;
       gap: 1rem;
+      margin-bottom: 2.5rem;
+
+      position: relative;
+      padding-top: 0;
     }
 
-    nav {               /* ADDED */
-      margin-left: auto;
-      text-align: right;
+    .site-brand h1 {
+      font-size: 2.0rem;
+      margin: 0;
     }
 
-    nav a {
+    .site-brand .tagline {
+      color: #bdbdbd;
+      margin-top: 0.5rem;
+    }
+
+    header.site-header nav {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    header.site-header nav a {
       margin-right: 1rem;
       color: #4ea1ff;
       text-decoration: none;
@@ -78,18 +97,15 @@
       white-space: nowrap;
     }
 
-    nav a:last-child { margin-right: 0; }
-    nav a:hover { text-decoration: underline; }
+    header.site-header nav a:last-child { margin-right: 0; }
+    header.site-header nav a:hover { text-decoration: underline; }
 
-    h1 {
-      font-size: 2.0rem;
-      margin: 0;
+    @media (max-width: 700px) {
+      header.site-header nav {
+        position: static;
+      }
     }
-
-    .tagline {
-      color: #bdbdbd;
-      margin-top: 0.5rem;
-    }
+    /* === END CANONICAL HEADER + NAV === */
 
     section {
       background: rgba(255, 255, 255, 0.04);
@@ -117,8 +133,8 @@
 
 <body>
   <main>
-    <header>
-      <div>
+    <header class="site-header">
+      <div class="site-brand">
         <h1>Exodus Data</h1>
         <div class="tagline">
           Public resources, licensing information, and contact details.
