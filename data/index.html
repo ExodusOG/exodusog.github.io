@@ -47,25 +47,49 @@
       line-height: 1.6;
     }
     main { max-width: 900px; margin: 0 auto; }
-    header {
+
+    /* === CANONICAL HEADER + NAV (site-wide) === */
+    header.site-header {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      align-items: flex-start;
       flex-wrap: wrap;
-      margin-bottom: 2.5rem;
       gap: 1rem;
+      margin-bottom: 2.5rem;
+
+      position: relative;
+      padding-top: 0;
     }
-    h1 { font-size: 2.0rem; margin: 0; }
-    .tagline { color: #bdbdbd; margin-top: 0.5rem; }
-    nav a {
+
+    .site-brand h1 { font-size: 2.0rem; margin: 0; }
+    .site-brand .tagline { color: #bdbdbd; margin-top: 0.5rem; }
+
+    header.site-header nav {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    header.site-header nav a {
       margin-right: 1rem;
       color: #4ea1ff;
       text-decoration: none;
       font-weight: 600;
       white-space: nowrap;
     }
-    nav a:last-child { margin-right: 0; }
-    nav a:hover { text-decoration: underline; }
+
+    header.site-header nav a:last-child { margin-right: 0; }
+    header.site-header nav a:hover { text-decoration: underline; }
+
+    @media (max-width: 700px) {
+      header.site-header nav { position: static; }
+    }
+    /* === END CANONICAL HEADER + NAV === */
+
     section {
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba(255, 255, 255, 0.08);
@@ -96,8 +120,8 @@
 
 <body>
   <main>
-    <header>
-      <div>
+    <header class="site-header">
+      <div class="site-brand">
         <h1>Data</h1>
         <div class="tagline">Dataset index (stable entry point).</div>
       </div>
@@ -130,3 +154,22 @@
           <tr>
             <td><strong>EXAMPLE_DATASET_001</strong></td>
             <td>Placeholder dataset. Repla
+            </td>
+            <td>—</td>
+            <td>—</td>
+            <td><a href="/license/">License</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Exodus Data
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
