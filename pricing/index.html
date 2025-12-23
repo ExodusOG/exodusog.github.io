@@ -8,24 +8,17 @@
   <meta name="description" content="Commercial licensing requirements for the use of Exodus Data content." />
   <meta name="robots" content="index, follow" />
 
-  <!-- Canonical -->
   <link rel="canonical" href="https://www.exodus-data.com/pricing/" />
-
-  <!-- Sitemap -->
   <link rel="sitemap" type="application/xml" href="https://www.exodus-data.com/sitemap.xml" />
-
-  <!-- License signals -->
   <link rel="license" href="https://www.exodus-data.com/license/" />
   <link rel="license" href="https://www.exodus-data.com/LICENSE.txt" />
 
-  <!-- Open Graph -->
   <meta property="og:site_name" content="Exodus Data" />
   <meta property="og:title" content="Commercial Licensing — Exodus Data" />
   <meta property="og:description" content="Commercial licensing requirements for the use of Exodus Data content." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.exodus-data.com/pricing/" />
 
-  <!-- Twitter/X -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Commercial Licensing — Exodus Data" />
   <meta name="twitter:description" content="Commercial licensing requirements for the use of Exodus Data content." />
@@ -40,31 +33,42 @@
       line-height: 1.6;
     }
 
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-    }
+    main { max-width: 900px; margin: 0 auto; }
 
-    header {
+    /* === CANONICAL HEADER + NAV (site-wide) === */
+    header.site-header {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      align-items: flex-start;
       flex-wrap: wrap;
-      margin-bottom: 2.5rem;
       gap: 1rem;
+      margin-bottom: 2.5rem;
+
+      position: relative;
+      padding-top: 0;
     }
 
-    h1 {
-      font-size: 2.1rem;
+    .site-brand h1 {
+      font-size: 2.0rem;
       margin: 0;
     }
 
-    .tagline {
+    .site-brand .tagline {
       color: #bdbdbd;
       margin-top: 0.5rem;
     }
 
-    nav a {
+    header.site-header nav {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    header.site-header nav a {
       margin-right: 1rem;
       color: #4ea1ff;
       text-decoration: none;
@@ -72,13 +76,15 @@
       white-space: nowrap;
     }
 
-    nav a:last-child {
-      margin-right: 0;
-    }
+    header.site-header nav a:last-child { margin-right: 0; }
+    header.site-header nav a:hover { text-decoration: underline; }
 
-    nav a:hover {
-      text-decoration: underline;
+    @media (max-width: 700px) {
+      header.site-header nav {
+        position: static;
+      }
     }
+    /* === END CANONICAL HEADER + NAV === */
 
     section {
       background: rgba(255, 255, 255, 0.04);
@@ -88,13 +94,8 @@
       margin-bottom: 1.25rem;
     }
 
-    ul {
-      margin-top: 0.5rem;
-    }
-
-    a {
-      color: #4ea1ff;
-    }
+    ul { margin-top: 0.5rem; }
+    a { color: #4ea1ff; }
 
     footer {
       margin-top: 3rem;
@@ -106,8 +107,8 @@
 
 <body>
   <main>
-    <header>
-      <div>
+    <header class="site-header">
+      <div class="site-brand">
         <h1>Commercial Licensing</h1>
         <div class="tagline">
           Paid licenses for commercial use of Exodus Data content.
