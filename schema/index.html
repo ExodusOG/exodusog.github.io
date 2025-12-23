@@ -14,30 +14,108 @@
   <link rel="license" href="https://www.exodus-data.com/LICENSE.txt" />
 
   <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 2rem; background-color: #0f0f0f; color: #eaeaea; line-height: 1.6; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #0f0f0f;
+      color: #eaeaea;
+      line-height: 1.6;
+    }
+
     main { max-width: 900px; margin: 0 auto; }
-    header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 2.5rem; gap: 1rem; }
-    h1 { font-size: 2.0rem; margin: 0; }
-    .tagline { color: #bdbdbd; margin-top: 0.5rem; }
-    nav a { margin-right: 1rem; color: #4ea1ff; text-decoration: none; font-weight: 600; white-space: nowrap; }
-    nav a:last-child { margin-right: 0; }
-    nav a:hover { text-decoration: underline; }
-    section { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 14px; padding: 1.25rem; margin-bottom: 1.25rem; }
+
+    /* === CANONICAL HEADER + NAV (site-wide) === */
+    header.site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+
+      position: relative;
+      padding-top: 0;
+    }
+
+    .site-brand h1 {
+      font-size: 2.0rem;
+      margin: 0;
+    }
+
+    .site-brand .tagline {
+      color: #bdbdbd;
+      margin-top: 0.5rem;
+    }
+
+    header.site-header nav {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    header.site-header nav a {
+      margin-right: 1rem;
+      color: #4ea1ff;
+      text-decoration: none;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    header.site-header nav a:last-child { margin-right: 0; }
+    header.site-header nav a:hover { text-decoration: underline; }
+
+    @media (max-width: 700px) {
+      header.site-header nav {
+        position: static;
+      }
+    }
+    /* === END CANONICAL HEADER + NAV === */
+
+    section {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
     a { color: #4ea1ff; }
-    pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
-    pre { padding: 1rem; border-radius: 12px; overflow: auto; border: 1px solid rgba(255, 255, 255, 0.10); background: rgba(0, 0, 0, 0.25); }
-    footer { margin-top: 3rem; font-size: 0.85rem; color: #9a9a9a; }
+
+    pre, code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    pre {
+      padding: 1rem;
+      border-radius: 12px;
+      overflow: auto;
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      background: rgba(0, 0, 0, 0.25);
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #9a9a9a;
+    }
+
     .muted { color: #b0b0b0; }
   </style>
 </head>
 
 <body>
   <main>
-    <header>
-      <div>
+    <header class="site-header">
+      <div class="site-brand">
         <h1>Schema</h1>
         <div class="tagline">Conventions for formatting datasets and metadata.</div>
       </div>
+
       <nav aria-label="Primary navigation">
         <a href="/">Home</a>
         <a href="/data/">Data</a>
