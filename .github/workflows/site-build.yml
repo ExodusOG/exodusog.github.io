@@ -1,4 +1,4 @@
-name: Site build (no sitemap automation)
+name: Deploy site content
 
 on:
   push:
@@ -9,8 +9,8 @@ permissions:
   contents: read
 
 jobs:
-  noop:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: No automated sitemap/dataset generation
-        run: echo "No-op: sitemap is static; no scripts run."
+      - name: No-op (content deploy handled by GitHub Pages)
+        run: echo "Deploy triggered on push."
