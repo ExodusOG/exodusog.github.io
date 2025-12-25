@@ -150,3 +150,7 @@ pre {
 .muted {
   color: #b0b0b0;
 }
+.notice {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+}
