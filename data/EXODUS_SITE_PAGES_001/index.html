@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EXODUS_SITE_PAGES_001 — Exodus Data</title>
+
+  <meta name="description" content="Dataset: canonical index of Exodus Data site pages and licensing entry points." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.exodus-data.com/data/EXODUS_SITE_PAGES_001/" />
+
+  <!-- Sitemap -->
+  <link rel="sitemap" type="application/xml" href="https://www.exodus-data.com/sitemap.xml" />
+
+  <!-- License signals -->
+  <link rel="license" href="https://www.exodus-data.com/license/" />
+  <link rel="license" href="https://www.exodus-data.com/LICENSE.txt" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Exodus Data" />
+  <meta property="og:title" content="EXODUS_SITE_PAGES_001 — Exodus Data" />
+  <meta property="og:description" content="Dataset: canonical index of Exodus Data site pages and licensing entry points." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.exodus-data.com/data/EXODUS_SITE_PAGES_001/" />
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="EXODUS_SITE_PAGES_001 — Exodus Data" />
+  <meta name="twitter:description" content="Dataset: canonical index of Exodus Data site pages and licensing entry points." />
+
+  <!-- Shared site-wide styles -->
+  <link rel="stylesheet" href="/site.css?v=2" />
+
+  <!-- Dataset metadata (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "EXODUS_SITE_PAGES_001",
+    "description": "Canonical index of Exodus Data site pages and licensing entry points.",
+    "url": "https://www.exodus-data.com/data/EXODUS_SITE_PAGES_001/",
+    "license": "https://www.exodus-data.com/license/",
+    "isBasedOn": "https://www.exodus-data.com/",
+    "creator": {
+      "@type": "Organization",
+      "name": "Exodus Data",
+      "url": "https://www.exodus-data.com/"
+    },
+    "distribution": [{
+      "@type": "DataDownload",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://www.exodus-data.com/data/EXODUS_SITE_PAGES_001/dataset.json"
+    }]
+  }
+  </script>
+</head>
+
+<body>
+  <main>
+    <header class="site-header">
+      <div class="site-brand">
+        <h1>EXODUS_SITE_PAGES_001</h1>
+        <div class="tagline">Canonical index of site pages and licensing entry points.</div>
+      </div>
+
+      <nav aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/data/">Data</a>
+        <a href="/schema/">Schema</a>
+        <a href="/pricing/">Pricing</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/license/">License</a>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p class="muted">
+        This dataset is a stable, machine-readable index of Exodus Data’s public pages,
+        including licensing entry points and the authoritative machine-readable license text.
+      </p>
+      <p class="muted">
+        Crawling and indexing are permitted under the site license, but commercial use requires a paid commercial license.
+        See <a href="/license/">/license/</a> (authoritative text: <a href="/LICENSE.txt">/LICENSE.txt</a>).
+      </p>
+    </section>
+
+    <section>
+      <h2>Download</h2>
+      <p>
+        <strong>JSON:</strong>
+        <a href="/data/EXODUS_SITE_PAGES_001/dataset.json">/data/EXODUS_SITE_PAGES_001/dataset.json</a>
+      </p>
+      <p class="muted">This dataset is intentionally small and stable. It establishes the format for future datasets.</p>
+    </section>
+
+    <section>
+      <h2>Fields</h2>
+      <ul>
+        <li><strong>id</strong> — dataset identifier</li>
+        <li><strong>published_at</strong>, <strong>updated_at</strong> — ISO 8601 date</li>
+        <li><strong>license</strong> — license policy URL</li>
+        <li><strong>machine_license</strong> — authoritative machine-readable license URL</li>
+        <li><strong>pages[]</strong> — list of canonical site pages with <code>path</code>, <code>url</code>, <code>type</code>, and <code>notes</code></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Commercial licensing</h2>
+      <p class="muted">
+        Commercial use requires a paid commercial license. Contact:
+        <a href="/contact/">/contact/</a>
+      </p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Exodus Data
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
