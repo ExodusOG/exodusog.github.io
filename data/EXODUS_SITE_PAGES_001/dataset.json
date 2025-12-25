@@ -2,6 +2,7 @@
   "id": "EXODUS_SITE_PAGES_001",
   "title": "Exodus Data — Site Pages Index",
   "version": "1.0.0",
+  "schema": "https://www.exodus-data.com/schema/",
   "license": "https://www.exodus-data.com/license/",
   "machine_license": "https://www.exodus-data.com/LICENSE.txt",
   "pricing": "https://www.exodus-data.com/pricing/",
@@ -22,6 +23,12 @@
       "url": "https://www.exodus-data.com/data/",
       "type": "collection",
       "notes": "Dataset index."
+    },
+    {
+      "path": "/data/EXODUS_SITE_PAGES_001/",
+      "url": "https://www.exodus-data.com/data/EXODUS_SITE_PAGES_001/",
+      "type": "dataset",
+      "notes": "Dataset landing directory."
     },
     {
       "path": "/schema/",
