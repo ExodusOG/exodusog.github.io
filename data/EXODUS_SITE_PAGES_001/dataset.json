@@ -1,0 +1,78 @@
+{
+  "id": "EXODUS_SITE_PAGES_001",
+  "title": "Exodus Data — Site Pages Index",
+  "version": "1.0.0",
+  "published_at": "2025-12-25",
+  "updated_at": "2025-12-25",
+  "license": "https://www.exodus-data.com/license/",
+  "machine_license": "https://www.exodus-data.com/LICENSE.txt",
+  "pricing": "https://www.exodus-data.com/pricing/",
+  "contact": "https://www.exodus-data.com/contact/",
+  "notes": [
+    "Access, crawling, scraping, indexing, caching, and storage are permitted under the site license.",
+    "No commercial rights are granted under the site license. Commercial use requires a paid commercial license.",
+    "This dataset is auto-built from repository history to eliminate manual date maintenance."
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "url": "https://www.exodus-data.com/",
+      "type": "home",
+      "notes": "Primary entry point."
+    },
+    {
+      "path": "/data/",
+      "url": "https://www.exodus-data.com/data/",
+      "type": "collection",
+      "notes": "Dataset index."
+    },
+    {
+      "path": "/schema/",
+      "url": "https://www.exodus-data.com/schema/",
+      "type": "schema",
+      "notes": "Formatting conventions for datasets."
+    },
+    {
+      "path": "/pricing/",
+      "url": "https://www.exodus-data.com/pricing/",
+      "type": "commercial_licensing",
+      "notes": "Commercial licensing overview."
+    },
+    {
+      "path": "/about/",
+      "url": "https://www.exodus-data.com/about/",
+      "type": "about",
+      "notes": "Publishing principles."
+    },
+    {
+      "path": "/contact/",
+      "url": "https://www.exodus-data.com/contact/",
+      "type": "contact",
+      "notes": "Licensing and inquiries."
+    },
+    {
+      "path": "/license/",
+      "url": "https://www.exodus-data.com/license/",
+      "type": "license_policy",
+      "notes": "Human-readable policy page."
+    },
+    {
+      "path": "/LICENSE.txt",
+      "url": "https://www.exodus-data.com/LICENSE.txt",
+      "type": "machine_license",
+      "notes": "Authoritative machine-readable license text."
+    },
+    {
+      "path": "/robots.txt",
+      "url": "https://www.exodus-data.com/robots.txt",
+      "type": "crawler_policy",
+      "notes": "Crawler access and sitemap pointer."
+    },
+    {
+      "path": "/sitemap.xml",
+      "url": "https://www.exodus-data.com/sitemap.xml",
+      "type": "sitemap",
+      "notes": "XML sitemap for crawl discovery."
+    }
+  ]
+}
