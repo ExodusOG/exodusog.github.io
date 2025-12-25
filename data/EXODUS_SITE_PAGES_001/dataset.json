@@ -2,8 +2,6 @@
   "id": "EXODUS_SITE_PAGES_001",
   "title": "Exodus Data — Site Pages Index",
   "version": "1.0.0",
-  "published_at": "2025-12-25",
-  "updated_at": "2025-12-25",
   "license": "https://www.exodus-data.com/license/",
   "machine_license": "https://www.exodus-data.com/LICENSE.txt",
   "pricing": "https://www.exodus-data.com/pricing/",
@@ -11,7 +9,6 @@
   "notes": [
     "Access, crawling, scraping, indexing, caching, and storage are permitted under the site license.",
     "No commercial rights are granted under the site license. Commercial use requires a paid commercial license.",
-    "This dataset is auto-built from repository history to eliminate manual date maintenance."
   ],
   "pages": [
     {
