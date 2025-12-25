@@ -107,6 +107,8 @@ footer {
 a {
   color: #4ea1ff;
 }
+
+
 /* =========================================================
    Data tables & code blocks (used on /data/)
    ========================================================= */
@@ -114,6 +116,10 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 0.75rem;
+
+  /* Prevent layout issues on narrow screens */
+  display: block;
+  overflow-x: auto;
 }
 
 th,
