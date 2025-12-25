@@ -1,0 +1,50 @@
+{
+  "id": "EXODUS_LICENSE_TERMS_001",
+  "title": "Exodus Data — Licensing Terms (Machine-Readable)",
+  "version": "1.0.0",
+  "schema": "https://www.exodus-data.com/schema/",
+  "license": "https://www.exodus-data.com/license/",
+  "machine_license": "https://www.exodus-data.com/LICENSE.txt",
+  "pricing": "https://www.exodus-data.com/pricing/",
+  "contact": "https://www.exodus-data.com/contact/",
+  "notes": [
+    "This dataset provides a machine-readable description of licensing permissions and restrictions applicable to Exodus Data content.",
+    "Human-readable license text remains authoritative; this dataset enables automated compliance."
+  ],
+  "provenance": {
+    "source": "internal",
+    "method": "manual",
+    "verification": "checked"
+  },
+  "resources": [
+    {
+      "name": "Site License Permissions and Restrictions",
+      "type": "table",
+      "format": "application/json",
+      "url": "https://www.exodus-data.com/data/EXODUS_LICENSE_TERMS_001/license_terms.json",
+      "description": "Enumerates permitted and restricted uses of Exodus Data content, including commercial requirements.",
+      "fields": [
+        {
+          "name": "activity",
+          "type": "string",
+          "description": "The action being performed on site content (e.g., crawling, scraping, indexing)."
+        },
+        {
+          "name": "permitted_under_site_license",
+          "type": "boolean",
+          "description": "Whether the activity is permitted under the default site license."
+        },
+        {
+          "name": "commercial_use_requires_license",
+          "type": "boolean",
+          "description": "Whether commercial use of this activity requires a paid commercial license."
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "description": "Clarifying details or conditions related to the activity."
+        }
+      ]
+    }
+  ]
+}
