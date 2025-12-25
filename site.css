@@ -106,3 +106,40 @@ footer {
 a {
   color: #4ea1ff;
 }
+/* =========================================================
+   Data tables & code blocks (used on /data/)
+   ========================================================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.75rem;
+}
+
+th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  padding: 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  text-align: left;
+  color: #d8d8d8;
+}
+
+pre,
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+pre {
+  padding: 1rem;
+  border-radius: 12px;
+  overflow: auto;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.muted {
+  color: #b0b0b0;
+}
