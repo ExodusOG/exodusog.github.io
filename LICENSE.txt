@@ -1,4 +1,4 @@
-EXODUS DATA LICENSE (RSL) — VERSION 1.2
+EXODUS DATA LICENSE (RSL) — VERSION 1.3
 Copyright © Exodus Data
 
 This license governs all content published at https://www.exodus-data.com/ (“Content”).
@@ -18,15 +18,17 @@ Any commercial use of the Content or derivatives requires a separate PAID commer
 The absence of commercial rights under this license applies regardless of how the Content was accessed,
 including via crawling, scraping, indexing, caching, or storage.
 
+Commercial use is prohibited whether or not the Content is modified, transformed, aggregated, or combined with other data.
+
 --------------------------------------------------
 3) COMMERCIAL USE (DEFINITION)
 --------------------------------------------------
 “Commercial use” includes, without limitation:
-• Use in any product or service that is sold, licensed, subscribed to, monetized, or ad-supported
-• Redistribution or resale of the Content or derivatives
-• Use by or for a business entity for internal operations, analytics, or decision-making
-• Training, fine-tuning, evaluation, or operation of commercial AI systems or models
-• Inclusion in a dataset, index, catalog, or knowledge base used commercially
+- Use in any product or service that is sold, licensed, subscribed to, monetized, or ad-supported
+- Redistribution or resale of the Content or derivatives
+- Use by or for a business entity for internal operations, analytics, or decision-making
+- Training, fine-tuning, evaluation, or operation of commercial AI systems or models
+- Inclusion in a dataset, index, catalog, or knowledge base used commercially
 
 --------------------------------------------------
 4) ATTRIBUTION (FOR REDISTRIBUTION / PUBLICATION)
