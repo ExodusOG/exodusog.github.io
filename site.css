@@ -2,7 +2,7 @@
    Global layout stability
    ========================================================= */
 html {
-  scrollbar-gutter: stable;
+  overflow-y: scroll;
 }
 
 /* =========================================================
