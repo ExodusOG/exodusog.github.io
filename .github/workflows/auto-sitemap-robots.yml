@@ -1,0 +1,40 @@
+name: Auto-generate sitemap and robots
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * *" # daily 06:17 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate sitemap and robots
+        run: |
+          node scripts/generate-sitemap.mjs
+          node scripts/generate-robots.mjs
+
+      - name: Commit changes (if any)
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml robots.txt
+          git commit -m "Auto-update sitemap.xml and robots.txt"
+          git push
